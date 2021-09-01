@@ -1,0 +1,56 @@
+.heading-bg{
+    background-image: url("./../images/photo-1612157777902-5382bc6e864b.jpeg");
+    height: 560px;
+    background-size: cover;
+    background-position: bottom;
+    @include media-breakpoint-up(md) { 
+        height: 582px;
+     }
+}
+.coach-img{
+    height: 628px;
+}
+.coach-head-break{
+    width: 48px;
+    @include media-breakpoint-up(md) { 
+        width: 94px;
+     }
+}
+.coach-head{
+    width: 48px;
+    @include media-breakpoint-up(md) { 
+        width: 68px;
+     }
+}
+.space-img{
+    height: 210px;
+    @include media-breakpoint-up(md) { 
+        height: 266px;
+     }
+     @include media-breakpoint-up(lg) { 
+        height: 444px;
+     }
+}
+
+.space-img-sm{
+    flex-basis: 100%;
+    @include media-breakpoint-up(md) { 
+        flex-basis: 50%;
+     }
+}
+
+
+.swiper {
+    @include media-breakpoint-up(lg) { 
+        width: 50vw;
+     }
+  }
+  .swiper-slide {
+    height: calc((100% - 30px) / 2);
+    flex-basis:150px;
+   
+    @include media-breakpoint-up(lg) { 
+      flex-basis:445px;
+    }
+  }
+  
