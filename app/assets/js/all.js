@@ -1,19 +1,41 @@
+
+
 $(function() {
   console.log('Hello Bootstrap5');
 });
 
-
-var swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper('.course-swiper', {
   watchSlidesProgress: true,
-  spaceBetween: 30,
   slidesPerView: 2,
-  grid:{
-    rows:2,
-  },
-  breakpoints: {
-    992:{
-      slidesPerView: 2,
+  spaceBetween: 30,
+});
 
-    }
-  }
+var feedbackSwiper = new Swiper(".feedback-swiper", {
+  slidesPerView: 3,
+  slidesPerColumn: 2,
+//slidesPerColumnFill: "row",
+  slidesPerGroup: 6,
+  spaceBetween: 16,
+  breakpoints:{
+    768:{
+      slidesPerView: 1,
+     slidesPerColumn: 3,
+  //slidesPerColumnFill: "row",
+    slidesPerGroup: 3,
+     spaceBetween: 8,
+     navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+      
+    },
+    },
+    992:{
+    slidesPerView: 2,
+     slidesPerColumn: 2,
+  //slidesPerColumnFill: "row",
+    slidesPerGroup: 2,
+     spaceBetween: 16,
+    },
+  },
+     
 });
